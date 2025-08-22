@@ -1,4 +1,4 @@
-# 🎭 Tone Transformation Chatbot using Offline LLMs
+# 🎭 Few-Shot Prompting Tone Transformation Chatbot using Offline LLMs
 
 This project is a comprehensive exploration of a **tone transformation system in Persian** that leverages offline, open-source **Large Language Models (LLMs)** to rewrite text, matching the tone and style of a reference text while preserving the original meaning.
 
