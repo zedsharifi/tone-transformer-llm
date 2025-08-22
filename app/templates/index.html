@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>چت‌بات تغییر لحن</h2>
+            <button id="new-chat-btn" aria-label="New Chat">چت جدید</button>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <textarea id="reference-input" placeholder="متن مرجع را وارد کنید..." rows="1"></textarea>
+            <textarea id="target-input" placeholder="متن هدف را وارد کنید..." rows="1"></textarea>
+            <button id="send-btn" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div id="loading-indicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <span>در حال پردازش...</span>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
