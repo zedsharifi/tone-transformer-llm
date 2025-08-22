@@ -100,7 +100,7 @@ ollama pull gemma:2b
 
 ```
 # Create a new environment
-conda create --name tone-env python=3.9
+conda create --name tone-env python=3.11
 
 # Activate the environment
 conda activate tone-env
