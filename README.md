@@ -109,20 +109,32 @@ conda activate tone-env
 pip install -r requirements.txt
 ```
 
+
 ---
 
 ### 4. Run the Application
 
-Make sure your Conda environment is active, then:
+Make sure your **tone-env** Conda environment is active.
+You must choose which model you want to test and run its corresponding Python file.
+⚠️ Only **one model** can run at a time on the same port.
+
+For example, to run the server with the **Qwen model**:
 
 ```
-python app/main.py
+python qwen.py
 ```
 
-The app will be available at:
+To run the server with the **Gemma model** instead:
+
+```
+python gemma.py
+```
+
+The application will be available at:
 👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
----
+Open this URL in your web browser to start using the chatbot.
+
 
 ## 💡 Usage
 
